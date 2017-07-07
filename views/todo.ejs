@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="/assets/todo.css">
+
+</head>
+<body>
+  <div id="container" class="container">
+    <div id="main">
+      <h1 class="title">To-Do List</h1>
+      <form action="todo" method="post" id="add-list">
+        <input type="text" placeholder="Add Item">
+        <input type="submit" name="" value="+">
+      </form>
+      <div class="content">
+        <ul class="tasks">
+          <% for(var i = 0; i < todos.length; i++) {%>
+          <li class="task"><%= todos[i].item %></li>
+          <% } %>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <script src="/assets/todo.js"></script>
+</body>
+</html>

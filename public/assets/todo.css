@@ -1,0 +1,74 @@
+*{
+  box-sizing: border-box;
+}
+ul,li{
+  text-decoration: none;
+  list-style: none;
+}
+#container{
+  width: 100%;
+}
+#main{
+  max-width: 30%;
+  height: 500px;
+  padding: 16px;
+  margin: 6% auto 0 auto;
+  border-radius: 2px;
+  box-shadow: 0 0 4px 0 #b1b1b1;
+  background: lightyellow;
+}
+#main h1.title{
+  padding: 0 8px 16px 8px;
+  border-bottom: 1px solid black;
+}
+#main .content{
+  padding: 4px 8px;
+}
+
+.tasks{
+  padding: 0;
+}
+
+.content .task{
+  padding: 8px;
+  position: relative;
+  font-size: 20px;
+}
+
+.task:hover{
+  text-decoration: line-through;
+  cursor: pointer;
+  background: antiquewhite;
+}
+
+#add-list{
+  position: relative;
+}
+
+#add-list input[type="text"]{
+  width: 100%;
+  padding: 4px;
+  padding-bottom: 8px;
+  font-size: 20px;
+  border: 0;
+  background: transparent;
+  outline: none;
+  border-bottom: 1px solid black;
+}
+#add-list input[type="submit"]{
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 22px;
+  background: transparent;
+  border: 0;
+  border-radius: 2em;
+  outline: 0;
+  cursor: pointer;
+  line-height: 21px;
+  transition: background 0.3s ease;
+}
+
+#add-list input[type="submit"]:hover{
+  background: rgba(0,0,0,0.1);
+}
